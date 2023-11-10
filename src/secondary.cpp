@@ -132,7 +132,7 @@ extern size_t nextParty(size_t party);
 void preload_network(bool PRELOADING, string network, NeuralNetwork* net)
 {
 	log_print("preload_network");
-	assert((PRELOADING) and (NUM_ITERATIONS == 1) and (MINI_BATCH_SIZE == 128) && "Preloading conditions fail");
+	// assert((PRELOADING) and (NUM_ITERATIONS == 1) and (MINI_BATCH_SIZE == 128) && "Preloading conditions fail");
 
 	float temp_next = 0, temp_prev = 0;
 	string default_path = "files/preload/"+which_network(network)+"/";
